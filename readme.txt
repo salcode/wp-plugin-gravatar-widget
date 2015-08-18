@@ -3,7 +3,7 @@ Contributors: automattic, johnny5
 Tags: widget, gravatar, WordPress.com
 Stable tag: trunk
 Requires at least: 2.8
-Tested up to: 3.2
+Tested up to: 4.3
 
 Displays a Gravatar in the sidebar of your blog. Some of the features of this plugin are:
 
@@ -35,6 +35,9 @@ Manual Install:
 Yes.
 
 == Changelog ==
+
+= 1.1 =
+* Updated Widget PHP Constructor from deprecated PHP 4 Style to PHP 5 Style
 
 = 1.0 =
 * Initial version

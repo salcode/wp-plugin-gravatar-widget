@@ -3,7 +3,7 @@
 Plugin Name: Gravatar Widget
 Plugin URI: http://wordpress.org/extend/plugins/gravatar-widget
 Description: Display a Gravatar in the sidebar of your blog
-Version: 1.0
+Version: 1.1
 Author: Automattic Inc.
 Author URI: http://automattic.com/
 */
@@ -13,7 +13,7 @@ class Gravatar_Widget extends WP_Widget {
 		$widget_ops  = array( 'classname' => 'widget_gravatar', 'description' => __( 'Insert a Gravatar image', 'gravatar-widget' ) );
 		$control_ops = array( 'width' => 300, 'height' => 300 );
 		
-		$this->WP_Widget( 'gravatar', __( 'Gravatar' ), $widget_ops, $control_ops );
+		parent::__construct( 'gravatar', __( 'Gravatar' ), $widget_ops, $control_ops );
 	}
 
 	/**
